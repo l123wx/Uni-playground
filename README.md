@@ -2,6 +2,14 @@
 
 使用 uni 公共组件库的示例项目
 
+## 拉取代码
+
+```sh
+git clone repository/path.git --recursive
+```
+
+通过 `--recursive` 拉取项目中所有仓库的代码
+
 ### 1. 组件库单独一个代码仓库，在项目中使用时通过 Submodule 的方式导入：
 
 ```sh
