@@ -1,30 +1,32 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { Button } from 'uni'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div style="margin-bottom: 20px">
+    <Button>Default</Button>
+    <Button type="primary">Primary</Button>
+    <Button type="success">Success</Button>
+    <Button type="info">Info</Button>
+    <Button type="warning">Warning</Button>
+    <Button type="danger">Danger</Button>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+  <div style="margin-bottom: 20px">
+    <Button plain>Plain</Button>
+    <Button type="primary" plain>Primary</Button>
+    <Button type="success" plain>Success</Button>
+    <Button type="info" plain>Info</Button>
+    <Button type="warning" plain>Warning</Button>
+    <Button type="danger" plain>Danger</Button>
+  </div>
+
+  <div style="margin-bottom: 20px">
+    <Button round>Round</Button>
+    <Button type="primary" round>Primary</Button>
+    <Button type="success" round>Success</Button>
+    <Button type="info" round>Info</Button>
+    <Button type="warning" round>Warning</Button>
+    <Button type="danger" round>Danger</Button>
+  </div>
+</template>
